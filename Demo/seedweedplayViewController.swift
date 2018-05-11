@@ -62,9 +62,9 @@ class seedweedplayViewController: UIViewController {
         }
         
         if isWin {
-            resultLabel.text = "Ariel lost her legs"
+            resultLabel.text = "Ariel lost her voice"
         } else {
-            resultLabel.text = "Ursula won Ariel's voice"
+            resultLabel.text = "Ariel won the legs"
         }
     }
     
