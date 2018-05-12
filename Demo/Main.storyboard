@@ -18,48 +18,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wave" translatesAutoresizingMaskIntoConstraints="NO" id="3mD-cA-Hm3">
-                                <rect key="frame" x="0.0" y="0.0" width="412" height="736"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yuc-Hr-dJR">
+                                <rect key="frame" x="110" y="407" width="157" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="0.42238334760000001" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWn-0J-5Bv" userLabel="Down Button">
-                                <rect key="frame" x="209" y="71" width="150" height="150"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcg-jd-YSz" userLabel="belle Button">
+                                <rect key="frame" x="252" y="199" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="down"/>
+                                <state key="normal" backgroundImage="belle"/>
                                 <connections>
-                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ow6-qb-ZWb"/>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ni4-8Y-Z5Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8X-si-ar2" userLabel="Left Button">
-                                <rect key="frame" x="127" y="244" width="150" height="150"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5k-7o-Ekc" userLabel="elsa Button">
+                                <rect key="frame" x="252" y="61" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="foot"/>
+                                <state key="normal" backgroundImage="elsa"/>
                                 <connections>
-                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4xU-Lq-pFc"/>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rup-L2-FfZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8X-si-ar2" userLabel="cinderella Button">
+                                <rect key="frame" x="16" y="199" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="cinderella"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mAW-M9-uIA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GH-To-m8p">
-                                <rect key="frame" x="35" y="71" width="150" height="150"/>
+                                <rect key="frame" x="16" y="61" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="up"/>
+                                <state key="normal" backgroundImage="ariel"/>
                                 <string key="userLabel" base64-UTF8="YES">
-CFVwIEJ1dHRvbg
+CGFyaWVsIEJ1dHRvbg
 </string>
                                 <connections>
-                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NJW-0Z-m1o"/>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PnO-fI-qha"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="海帶拳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5G-P7-hEb" userLabel="Result Label">
-                                <rect key="frame" x="43" y="419" width="298" height="56"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-kQ-V3l" userLabel="aurora Button">
+                                <rect key="frame" x="102" y="163" width="167" height="146"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93547368049621582" green="0.42866797852794603" blue="0.2700672746624751" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="aurora"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WWn-e5-hqA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWn-0J-5Bv" userLabel="anna Button">
+                                <rect key="frame" x="134" y="61" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="anna"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6DH-Lz-MYC"/>
+                                </connections>
+                            </button>
+                            <label userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="公主海帶拳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5G-P7-hEb" userLabel="Result Label">
+                                <rect key="frame" x="50" y="331" width="298" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ariel" translatesAutoresizingMaskIntoConstraints="NO" id="td0-gu-Hdb" userLabel="Ariel Image View">
-                                <rect key="frame" x="127" y="497" width="150" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="princess frame" translatesAutoresizingMaskIntoConstraints="NO" id="td0-gu-Hdb" userLabel="princess frame  Image View">
+                                <rect key="frame" x="42" y="399" width="299" height="288"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -67,23 +90,28 @@ CFVwIEJ1dHRvbg
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="arielImageVIew" destination="td0-gu-Hdb" id="Wp6-et-84j"/>
-                        <outlet property="downBotton" destination="DWn-0J-5Bv" id="GOQ-yo-FaR"/>
-                        <outlet property="footBotton" destination="N8X-si-ar2" id="koe-Yu-hWy"/>
+                        <outlet property="annaButton" destination="DWn-0J-5Bv" id="A35-82-tlX"/>
+                        <outlet property="arielButton" destination="9GH-To-m8p" id="fYt-C9-vGe"/>
+                        <outlet property="auroraButton" destination="Fac-kQ-V3l" id="dAn-8v-jgn"/>
+                        <outlet property="belleButton" destination="C5k-7o-Ekc" id="eOf-UE-Uml"/>
+                        <outlet property="cinderellaButton" destination="N8X-si-ar2" id="zkN-UP-Ssg"/>
+                        <outlet property="elsaButton" destination="C5k-7o-Ekc" id="0GV-zU-YCB"/>
+                        <outlet property="princessImageView" destination="yuc-Hr-dJR" id="LWp-GE-Fs6"/>
                         <outlet property="resultLabel" destination="W5G-P7-hEb" id="ERM-Pf-c7B"/>
-                        <outlet property="upBotton" destination="9GH-To-m8p" id="32O-gu-AOE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293.60000000000002" y="85.907046476761622"/>
+            <point key="canvasLocation" x="141.59999999999999" y="-339.58020989505252"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ariel" width="220" height="164"/>
-        <image name="down" width="215" height="185"/>
-        <image name="foot" width="549" height="384"/>
-        <image name="up" width="524" height="462"/>
-        <image name="wave" width="1024" height="768"/>
+        <image name="anna" width="800" height="800"/>
+        <image name="ariel" width="296" height="296"/>
+        <image name="aurora" width="349" height="293"/>
+        <image name="belle" width="466" height="484"/>
+        <image name="cinderella" width="450" height="450"/>
+        <image name="elsa" width="300" height="300"/>
+        <image name="princess frame" width="684" height="700"/>
     </resources>
 </document>

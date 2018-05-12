@@ -12,69 +12,100 @@ class seedweedplayViewController: UIViewController {
     
    
     @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet weak var arielImageVIew: UIImageView!
-    let directions = ["up", "down", "foot"]
-    @IBOutlet weak var upBotton: UIButton!
-    @IBOutlet weak var downBotton: UIButton!
-    @IBOutlet weak var footBotton: UIButton!
+    @IBOutlet weak var princessImageView: UIImageView!
     
+    let princesses = ["cinderella", "ariel", "belle","elsa", "anna", "aurora"]
     
+    @IBOutlet weak var arielButton: UIButton!
+    @IBOutlet weak var annaButton: UIButton!
+    @IBOutlet weak var elsaButton: UIButton!
+    @IBOutlet weak var cinderellaButton: UIButton!
+    @IBOutlet weak var auroraButton: UIButton!
+    @IBOutlet weak var belleButton: UIButton!
+    
+
     
     
     func transparentButtons() {
-        upBotton.alpha = 0.2
-        downBotton.alpha = 0.2
-        footBotton.alpha = 0.2
+        cinderellaButton.alpha = 0.2
+        arielButton.alpha = 0.2
+        auroraButton.alpha = 0.2
+        annaButton.alpha = 0.2
+        belleButton.alpha = 0.2
+        elsaButton.alpha = 0.2
         
     }
     
    
-    
     @IBAction func play(_ sender: UIButton) {
+     
         
-        let randomDistribution = GKRandomDistribution(lowestValue: 0, highestValue: directions.count - 1)
+        let randomDistribution = GKRandomDistribution(lowestValue: 0, highestValue: princesses.count - 1)
         let number = randomDistribution.nextInt()
-        let direction = directions[number]
-        arielImageVIew.image = UIImage(named: direction)
+        let princess = princesses[number]
+        princessImageView.image = UIImage(named: princess)
         
     transparentButtons()
         var isWin = false
-        if sender ==  upBotton {
-            upBotton.alpha = 1
+        if sender ==  cinderellaButton {
+            cinderellaButton.alpha = 1
            
-            if direction == "up" {
+            if princess == "cinderella" {
                 isWin = true
             }
-        } else if sender == downBotton {
-            downBotton.alpha = 1
+        } else if sender == arielButton {
+            arielButton.alpha = 1
             
-            if direction == "down" {
+            if princess == "ariel" {
                 isWin = true
             }
-        } else if sender == footBotton {
-            footBotton.alpha = 1
+        } else if sender == belleButton {
+            belleButton.alpha = 1
            
-            if direction == "foot" {
+            if princess == "belle" {
                 isWin = true
             }
-        
+        }   else if sender == elsaButton {
+                    elsaButton.alpha = 1
+                    
+                    if princess == "elsa" {
+                        isWin = true
+            }
+            
+                        
+                        if princess == "snowwhite" {
+                            isWin = true
+            }
+                        }   else if sender == annaButton {
+                            annaButton.alpha = 1
+                            
+                            if princess == "anna" {
+                                isWin = true
+            }
+                            }   else if sender == auroraButton {
+                                auroraButton.alpha = 1
+                                
+                                if princess == "anna" {
+                                    isWin = true
+            }
         
         }
         
         if isWin {
-            resultLabel.text = "Ariel lost her voice"
+            resultLabel.text = "Win"
         } else {
-            resultLabel.text = "Ariel won the legs"
+            resultLabel.text = "Lose"
         }
     }
     
-    override func viewDidLoad() {
+    
+   override  func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+   override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -89,5 +120,5 @@ class seedweedplayViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
+
