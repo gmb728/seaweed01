@@ -47,16 +47,18 @@ class seedweedplayViewController: UIViewController {
         
     transparentButtons()
         var isWin = false
-        if sender ==  cinderellaButton {
-            cinderellaButton.alpha = 1
+        
+        
+        if sender ==  arielButton {
+            arielButton.alpha = 1
            
-            if princess == "cinderella" {
+            if princess == "ariel" {
                 isWin = true
             }
-        } else if sender == arielButton {
-            arielButton.alpha = 1
+        } else if sender == cinderellaButton {
+            cinderellaButton.alpha = 1
             
-            if princess == "ariel" {
+            if princess == "cinderella" {
                 isWin = true
             }
         } else if sender == belleButton {
@@ -72,27 +74,26 @@ class seedweedplayViewController: UIViewController {
                         isWin = true
             }
             
-                        
-                        if princess == "snowwhite" {
-                            isWin = true
+        }   else if sender == auroraButton {
+            auroraButton.alpha = 1
+            
+            if princess == "aurora" {
+                isWin = true
             }
-                        }   else if sender == annaButton {
-                            annaButton.alpha = 1
-                            
-                            if princess == "anna" {
-                                isWin = true
-            }
-                            }   else if sender == auroraButton {
-                                auroraButton.alpha = 1
-                                
-                                if princess == "anna" {
-                                    isWin = true
+            
+        }   else if sender == annaButton {
+            annaButton.alpha = 1
+            
+            if princess == "anna" {
+                isWin = true
+            
             }
         
         }
         
         if isWin {
             resultLabel.text = "Win"
+    
         } else {
             resultLabel.text = "Lose"
         }
